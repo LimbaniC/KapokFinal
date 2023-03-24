@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "606795837072",
+    "project_id": "kapok-flutterflow",
+    "storage_bucket": "kapok-flutterflow.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:606795837072:android:d1a383f66a76b023b8b215",
+        "android_client_info": {
+          "package_name": "com.flutterflow.kapok2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "606795837072-oahg8dnvof1prt76c5flaqngi6mbr7ev.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlmy3sdSR1cee4ho7jcujZrg4mWrJERO0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "606795837072-oahg8dnvof1prt76c5flaqngi6mbr7ev.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "606795837072-lkdnk8kksc2sr8fkgsrlksjo3tevfajs.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.flutterflow.kapok2"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
