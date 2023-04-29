@@ -27,6 +27,8 @@ class _ProfileHomeWidgetState extends State<ProfileHomeWidget> {
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
+  String get currentUserDisplayName => 'null';
+
   @override
   void initState() {
     super.initState();

@@ -1,5 +1,4 @@
 import '/auth/auth_util.dart';
-import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
@@ -857,6 +856,7 @@ class _LoginSignupWidgetState extends State<LoginSignupWidget> {
                                                 displayName: _model
                                                     .fullNameController.text,
                                               );
+
                                               await UsersRecord.collection
                                                   .doc(user.uid)
                                                   .update(usersCreateData);
@@ -919,4 +919,12 @@ class _LoginSignupWidgetState extends State<LoginSignupWidget> {
       ),
     );
   }
+
+  createUsersRecordData({required String displayName}) {}
+}
+
+class UsersRecord {
+  static var collection;
+
+  static getDocument(doc) {}
 }

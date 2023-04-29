@@ -28,6 +28,8 @@ class _KapokMapWidgetState extends State<KapokMapWidget> {
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
+  String get currentUserDisplayName => 'null';
+
   @override
   void initState() {
     super.initState();

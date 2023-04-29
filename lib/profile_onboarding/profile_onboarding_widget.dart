@@ -27,6 +27,8 @@ class _ProfileOnboardingWidgetState extends State<ProfileOnboardingWidget> {
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
+  String get currentUserDisplayName => 'null';
+
   @override
   void initState() {
     super.initState();

@@ -5,9 +5,9 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import '../flutter_flow/flutter_flow_util.dart';
 
-import '../backend/backend.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:stream_transform/stream_transform.dart';
+import '../login_signup/login_signup_widget.dart';
 import 'firebase_user_provider.dart';
 
 export 'anonymous_auth.dart';
@@ -37,6 +37,8 @@ Future<User?> signInOrCreateAccount(
     return null;
   }
 }
+
+maybeCreateUser(User user) {}
 
 Future signOut() {
   return FirebaseAuth.instance.signOut();
@@ -80,19 +82,19 @@ Future resetPassword(
 Future sendEmailVerification() async =>
     currentUser?.user?.sendEmailVerification();
 
-String get currentUserEmail =>
-    currentUserDocument?.email ?? currentUser?.user?.email ?? '';
+// String get currentUserEmail =>
+//     currentUserDocument?.email ?? currentUser?.user?.email ?? '';
 
-String get currentUserUid => currentUser?.user?.uid ?? '';
+// String get currentUserUid => currentUser?.user?.uid ?? '';
 
-String get currentUserDisplayName =>
-    currentUserDocument?.displayName ?? currentUser?.user?.displayName ?? '';
+// String get currentUserDisplayName =>
+//     currentUserDocument?.displayName ?? currentUser?.user?.displayName ?? '';
 
-String get currentUserPhoto =>
-    currentUserDocument?.photoUrl ?? currentUser?.user?.photoURL ?? '';
+// String get currentUserPhoto =>
+//     currentUserDocument?.photoUrl ?? currentUser?.user?.photoURL ?? '';
 
-String get currentPhoneNumber =>
-    currentUserDocument?.phoneNumber ?? currentUser?.user?.phoneNumber ?? '';
+// String get currentPhoneNumber =>
+//     currentUserDocument?.phoneNumber ?? currentUser?.user?.phoneNumber ?? '';
 
 String get currentJwtToken => _currentJwtToken ?? '';
 

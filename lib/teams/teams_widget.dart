@@ -1,5 +1,4 @@
 import '/auth/auth_util.dart';
-import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
@@ -509,4 +508,10 @@ class _TeamsWidgetState extends State<TeamsWidget> {
       ),
     );
   }
+
+  createTeamsRecordData({required String teamName, required String location}) {}
+}
+
+class TeamsRecord {
+  static var collection;
 }
